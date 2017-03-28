@@ -19,5 +19,12 @@ describe StringCalculator do
         end
       end
     end
+    context 'with several input strings' do
+      context "given '10' and '1'" do
+        it "returns '11'" do
+          expect(StringCalculator.add('10','1')).to eql(11)
+        end
+      end
+    end
   end
 end
